@@ -1,0 +1,280 @@
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #f5ebe0;
+    color: black;
+    border-radius: 10px;
+    font-weight: normal;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #d6ccc2;
+    position: relative;
+  }
+
+  .logo {
+    width: 70px;
+    padding: 5px;
+  }
+  
+  .topnav #mylinks {
+    float: right;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style-type: none;
+    display: inline-block;
+    line-height: 5;
+    margin: 0 10px;
+    }
+
+  .topnav ul li a{
+    text-decoration: none;
+    color: #6c584c;
+    font-size: 20px;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 30px;
+    cursor: pointer;
+  
+  }
+
+  #check{
+    display: none;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #f5ebe0;
+    top: 90px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+.topnav ul li a:hover{
+  color: #d6ccc2;
+  transition: .5s;
+  width: 480px;
+}
+
+#check:checked ~ ul{
+  left: 0;
+}
+
+
+.l-opskrifter {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+  padding: 5%;
+}
+
+.opskrifter-image {
+  display: block;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+footer{
+  background: #d6ccc2;
+  padding-left: 10px;
+}
+
+
+h6 {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer p {
+  font-style: italic;
+  background-color: #d6ccc2;
+}
+
+.follow {
+  padding-left: 0;
+
+}
+
+.socials a{
+  display: inline-block;
+  font-size: 40px;
+  height: 80px;
+  width: 80px;
+  background: #00000021;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 50%;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover{
+  color:#d6ccc2;
+  background-color:#000000;
+
+}
+
+
+
+  @media screen and (min-width: 480px) {
+
+
+    .mobile-container {
+      max-width: 768px;
+      margin: 0;
+      border-radius: 10px;
+    }
+
+    body {
+      font-size: 20px;
+     }
+
+    .logo {
+      width: 70px;
+      padding: 5px;
+    }
+
+    ul {
+      transition: none;
+    }
+    
+   
+
+  }
+
+
+  @media screen and (min-width: 768px) {
+
+    .mobile-container {
+      max-width: 1024px;
+      margin: auto;
+      border-radius: 10px;
+
+    }
+
+    h1 {
+      margin: 3%;
+    }
+
+    .logo {
+      width: 80px;
+      padding: 8px;
+    }
+
+    .checkbtn { 
+      display: none;
+    }
+  
+
+    #mylinks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      float: right;
+      margin-right: 10%;
+      background: none;
+      transition: none;
+      width: 500px;
+      height: 0;
+      top: 50%;
+      left: 35%;
+     
+    }
+
+    #mylinks{
+      right: 20px;
+    }
+
+    .topnav ul li a:hover{
+      color: #ffffff;
+      transition: .5s;
+      
+    }
+
+    .l-opskrifter {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+      padding: 5%;
+    }
+
+
+  }
+
+    @media screen and (min-width: 1024px) {
+
+      .mobile-container {
+        max-width: 1200px;
+        margin: auto;
+        border-radius: 10px;
+      }
+      h1 {
+        margin: 3%;
+        font-size: 35px;
+      }
+    
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+    
+    @media screen and (min-width: 1200px) {
+
+    
+      .mobile-container {
+        max-width: none;
+        width: 100%;
+        margin: auto;
+        border-radius: 10px;
+        
+      }
+    
+      .logo {
+        width: 90px;
+        padding: 8px;
+      }
+
+    
+    
+    }

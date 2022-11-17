@@ -1,0 +1,4 @@
+user-agent: *
+Disallow: /
+
+Sitemap: https://foremma.eaasimone.dk/sitemap.xml
